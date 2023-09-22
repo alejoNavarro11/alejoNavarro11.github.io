@@ -1,0 +1,46 @@
+/* RSPOMSIVE
+    ===================================================
+ Escritorios muy grandes
+    _________________________________________________*/
+    @media(min-width: 1200px){
+        .content-banner h1{
+            font-size: 3em;
+        }
+    }
+    /*===================================================
+ Tablets en horizonal y escritorios normales
+    _________________________________________________*/
+    @media(min-width: 768px) and (max-width: 1199px){
+        .img-about-me .img{
+            margin: 0 15px;
+        }
+        .content-banner h1{
+            font-size: 3em;
+        }
+    }
+    /*===================================================
+ Mobiles en horizontal o tablets en vertical
+    _________________________________________________*/
+    @media(max-width: 767px){
+        .content-logo{
+            margin: 0 auto;
+        }
+        .content-banner h1{
+            font-size: 3em;
+        }
+    }
+    /*===================================================
+ Moviles en vertical
+    _________________________________________________*/
+    @media(max-width: 480px){
+        .img-about-me .img{
+            margin: 20px;
+        }
+        .content-banner h1{
+            font-size: 2em;
+        }
+        .list{
+            font-size: .7em;
+        }
+    }
+        

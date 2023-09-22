@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&family=Poppins:wght@300;500;700&display=swap');
+@import url('responsive.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html, body {
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #F2F4F4 ;
+}
+
+/* Utility */
+
+:root{
+    --primaryColor: #FAD6F0;
+    --secondaryColor : #FCEAF8;
+}
+.skip{
+    height: 2em;
+}
+
+/* Header */
+header{
+    -webkit-box-shadow: 0px 0px 20px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 20px -2px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 20px -2px rgba(0,0,0,0.75);
+}
+    /* Contact nav */
+.content-contact{
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: var(--primaryColor);
+    padding: .8em 0;
+    font-size: .8em;
+}
+.content-contact i{
+    padding: 0 0.5rem;
+    font-size: 1.2em;
+}
+.instagram, .locate{
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+    /* Logo content */
+.content-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+.content-header i{
+    font-size: 1.8em;
+    cursor: pointer;
+}
+.content-logo img{
+    height: 250px;
+}
+.contact{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background: #00bb2d;
+    border-radius: 50%;
+    margin: 10px;
+    -webkit-box-shadow: 0px 0px 21px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 21px -4px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 21px -4px rgba(0,0,0,0.75);
+}
+.contact a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    padding: 15px;
+    border-radius: 50%;
+}
+.contact a:hover{
+    background-color: #13a837;
+}
+
+    /* Nav bar 2 */
+.nav-bar-botton{
+    position: sticky;
+    top: 0;
+    background-color: var(--primaryColor);
+    padding: .8em 0;
+    font-size: 1.2em;
+    background-color: var(--primaryColor);
+}
+.nav-bar-botton ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    list-style: none;
+}
+.nav-bar-botton li{
+    margin: 0 20px;
+}
+.nav-bar-botton a{
+    color: #000;
+    text-decoration: none;
+    font-weight: 300;
+    padding: .8em 10px;
+}
+.nav-bar-botton a:hover{
+    background-color: var(--secondaryColor);
+}
+.list i:hover{
+    background-color: var(--secondaryColor);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/* Banner */
+.content-banner{
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    text-align: center;
+
+    background: linear-gradient(rgba(5,7,12,0.30), rgba(5,7,12,0.15)), url('img/banner.jpg') no-repeat center center fixed;
+    width: 100%;
+    height: 584px;
+}
+
+.content-banner p{
+    font-size: 1.3em;
+    font-weight: 300;
+}
+
+/* Sobre mi */
+.container-box{
+    margin: 7em auto;
+    width: 80%;
+    background-color: #fff;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 9px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 9px -3px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 9px -3px rgba(0,0,0,0.75);
+}
+.about-me{
+    width: 50%;
+    padding: 1em 0 3em;
+    margin: 3em auto;
+}
+.about-me h1{
+    margin: 0 auto;
+    padding: 1em 0;
+}
+.about-me p{
+    font-weight: 300;
+    font-size: 1.1em;
+}
+.img-about-me{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+.img-about-me .img{
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+}
+.img-1{
+    background-image: url('img/corazon-txt.jpg');
+    background-position: center;
+    background-size: cover;
+    transition: all .6s;
+}
+.img-1:hover{
+    background-image: url('img/coneja-fem1.jpg');
+    background-image: url('img/corazon-txt2.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.img-2{
+    background-image: url('img/coneja-fem0.jpg');
+    background-position: center;
+    background-size: cover;
+    transition: all .6s;
+}
+.img-2:hover{
+    background-image: url('img/conejo4.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.img-3{
+    background-image: url('img/cestas.jpg');
+    background-position: center;
+    background-size: cover;
+    transition: all .6s;
+}
+.img-3:hover{
+    background-image: url('img/cestas1.jpg');
+    background-position: center;
+    background-size: cover;
+}
+/* Footer */
+.container-footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 4em;
+    background-color: #fff;
+    font-size: 1.2em;
+    font-weight: 300;
+}
+.container-footer h3{
+    padding: .6em;
+}
+.container-footer p{
+    padding: .1em;
+}
+.container-footer a{
+    color: #000;
+    text-decoration: none;
+}
+.container-footer a:hover{
+    color: #9F9F9F
+}
+.right-footer a{
+    font-size: 1.5em;
+    margin: 10px;
+}
+.copyright{
+    text-align: center;
+    padding: 1em;
+    font-weight: 300;
+}
